@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard do Restaurante</title>
+  <link rel="icon" type="image/x-icon" href="/images/Logo AvalIA.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="dashboard.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <button class="back-button">←</button>
+    <div class="logo">Aval<span>IA</span></div>
+
+    <div class="restaurant-card">
+      <div class="restaurant-icon">🍽️</div>
+      <div class="restaurant-info">
+        <h2 id="restaurantName">Carregando...</h2>
+      </div>
+    </div>
+
+    <div class="tags" id="restaurantTags">
+    </div>
+
+    <p>Nota Média: <span id="averageRating">Carregando...</span></p>
+    <div id="ratingStars"></div>
+    <p>Avaliações: <span id="reviewCount">Carregando...</span></p>
+
+    <div class="buttons">
+      <button id="generateAnalysisBtn" onclick="generateBusinessAnalysis()">Gerar relatórios de feedback</button>
+      <button id="historyBtn">Histórico de relatórios</button>
+      <!--<button id="editProfileBtn">Editar perfil do restaurante</button>-->
+    </div>
+
+    <div id="message" class="message"></div>
+  </div>
+</body>
+</html>

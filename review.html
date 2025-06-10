@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revisão do Restaurante</title>
+  <link rel="icon" type="image/x-icon" href="/images/Logo AvalIA.png">
+  <link rel="stylesheet" href="review.css">
+</head>
+<body>
+  <div class="container">
+    <button class="back-button" onclick="goBack()">←</button>
+    <div class="logo">🍽️ Aval<span>IA</span></div>
+
+    <div class="restaurant-card">
+      <div class="restaurant-icon">
+        <img src="images/restaurant_stock.jpg" alt="Ícone do restaurante">
+      </div>
+      <div class="restaurant-info">
+        <h2 id="restaurant-name">Nome do Restaurante</h2>
+        <p id="restaurant-rating">Média: 0 (0 avaliações)</p>
+        <div class="tags" id="restaurant-tags"></div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="general-review-btn" onclick="generateGeneralReview()">Gerar Avaliação de Compatibilidade</button>
+      <div id="loading-spinner" class="spinner" style="display: none;">⏳ Carregando...</div>
+      <button id="rate-restaurant-btn" onclick="rateRestaurant()">Avaliar Restaurante</button>
+    </div>
+
+    <div id="review-result" class="review-result"></div>
+  </div>
+  <script src="review.js"></script>
+</body>
+</html>

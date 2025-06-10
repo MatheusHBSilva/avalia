@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliar Restaurante</title>
+  <link rel="icon" type="image/x-icon" href="/images/Logo AvalIA.png">
+  <link rel="stylesheet" href="rate.css">
+</head>
+<body>
+  <div class="container">
+    <button class="back-button" onclick="goBack()">←</button>
+    <div class="logo">🍽️ Aval<span>IA</span></div>
+    <h2>Avaliar Restaurante</h2>
+
+    <div class="restaurant-card">
+      <div class="restaurant-icon">
+        <img src="/images/restaurant_stock.jpg" alt="Ícone do restaurante">
+      </div>
+      <div class="restaurant-info">
+        <h3 id="restaurant-name">Nome do Restaurante</h3>
+      </div>
+    </div>
+
+    <div class="rating-section">
+      <label for="rating">Nota:</label>
+      <div class="stars" id="star-rating">
+        <span data-value="1">☆</span>
+        <span data-value="2">☆</span>
+        <span data-value="3">☆</span>
+        <span data-value="4">☆</span>
+        <span data-value="5">☆</span>
+      </div>
+      <input type="hidden" id="rating-value" name="rating" value="1">
+    </div>
+
+    <textarea id="review-text" placeholder="Escreva sua avaliação aqui..." rows="4"></textarea>
+
+    <button id="save-review-btn" class="submit-button">Salvar Avaliação</button>
+  </div>
+  <script src="rate.js"></script>
+</body>
+</html>

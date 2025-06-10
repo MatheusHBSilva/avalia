@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Restaurante - AvalIA</title>
+  <link rel="icon" type="image/x-icon" href="/images/Logo AvalIA.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <div class="container">
+    <a href="login_restaurant.html" class="back-link"><- Voltar</a>
+    <div class="logo">Aval<span>IA</span></div>
+    <div class="register-container">
+      <h2>Crie o cadastro do seu restaurante</h2>
+      <div class="form-group">
+        <label for="restaurantName">Nome do restaurante:</label>
+        <input type="text" id="restaurantName" placeholder="Digite o nome do restaurante" required>
+      </div>
+      <div class="form-group">
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" placeholder="Digite o CNPJ do restaurante" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Digite o email do restaurante" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" placeholder="Digite a senha" required>
+      </div>
+      <div class="form-group">
+        <label for="tags">Tags (separadas por vírgula):</label>
+        <input type="text" id="tags" placeholder="Ex: comida, bebida, serviço">
+      </div>
+      <button onclick="register()">Cadastre-se</button>
+      <p id="message" class="message"></p>
+    </div>
+  </div>
+  <script src="register.js"></script>
+</body>
+</html>
